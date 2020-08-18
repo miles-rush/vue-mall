@@ -11,6 +11,7 @@ const Cate = () => import('../components/goods/Cate.vue')
 const Params = () => import('../components/goods/Params.vue')
 const List = () => import('../components/goods/List.vue')
 const Add = () => import('../components/goods/Add.vue')
+const Order = () => import('../components/order/Order.vue')
 
 Vue.use(Router)
 
@@ -60,6 +61,9 @@ const router = new Router({
         {
           path:'/goods/add',
           component:Add
+        },{
+          path:'/orders',
+          component:Order
         }
       ]
     }
